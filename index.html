@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertidor Divisas</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Convertidor de Divisas</h1>
+    </header>
+
+    <main>
+        <section class="formulario">
+            <h2>Datos de Conversión</h2>
+            <form id="forma" action="">
+                <label for="cantidad">Cantidad:</label>
+                <input id="cantidad" type="number" placeholder="Ejemplo: 1000">
+
+                <label for="origen">De:</label>
+                <select id="origen">
+                    <option value="MXN">🇲🇽 Peso Mexicano (MXN)</option>
+                    <option value="USD">🇺🇸 Dólar (USD)</option>
+                    <option value="EUR">🇪🇺 Euro (EUR)</option>
+                    <option value="GBP">🇬🇧 Libra (GBP)</option>
+                    <option value="JPY">🇯🇵 Yen (JPY)</option>
+                </select>
+
+                <label for="destino">A:</label>
+                <select id="destino">
+                    <option value="USD">🇺🇸 Dólar (USD)</option>
+                    <option value="MXN">🇲🇽 Peso Mexicano (MXN)</option>
+                    <option value="EUR">🇪🇺 Euro (EUR)</option>
+                    <option value="GBP">🇬🇧 Libra (GBP)</option>
+                    <option value="JPY">🇯🇵 Yen (JPY)</option>
+                </select>
+
+                <input type="submit" value="Convertir">
+            </form>
+        </section>
+
+        <section class="resultado">
+            <h2>Resultado</h2>
+            <p id="resumen"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy 2025 Marcos Uriel Martinez Muñiz</p>
+    </footer>
+
+    <script src="js/divisas.js"></script>
+</body>
+</html>
